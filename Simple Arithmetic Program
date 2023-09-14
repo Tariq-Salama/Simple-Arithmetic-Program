@@ -1,0 +1,46 @@
+/**
+ * Java program to prompt the user to enter two integers. Your program will display a series of 
+ * arithmetic operations using those two integers.
+ * @author Tariq Salama
+ * @version 20230901
+ **/
+import java.util.Scanner;
+
+public class SimpleMath {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int num;
+        int num2;
+       // indicates user to input a number //
+       System.out.print("Enter the first number: ");
+       
+        num = input.nextInt();
+        input.nextLine();
+        
+        // indicates user to input another number //
+       System.out.print("Enter the second number: ");
+       
+        num2 = input.nextInt();
+        
+        // adds user input numbers together //
+       System.out.println(num + " + " + num2 + " = " + (num + num2));
+       
+       // subtracts user input numbers //
+       System.out.println(num + " - " + num2 + " = " + (num - num2));
+       
+       // multiplies user input numbers //
+       System.out.println(num + " * " + num2 + " = " + (num * num2));
+       
+       // divides user input numbers //
+       System.out.println(num + " / " + num2 + " = " + (num / num2));
+       
+       // finds integer remainder of the two inputed numbers //
+       System.out.println(num + " % " + num2 + " = " + (num % num2));
+       
+       // finds the average of the two user inputed numbers //
+       System.out.println("The average of your two numbers is: " + (num + num2) / 2);
+       
+    }
+}
