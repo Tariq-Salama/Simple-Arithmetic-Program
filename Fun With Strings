@@ -1,0 +1,33 @@
+/**
+ * Asks to input a name and it will tell you how many letter are in the name, first letter, last letter,
+ * and a nice "Goodbye!" message.
+ * @author Tariq Salama
+ * @version 20230905
+ */
+import java.util.Scanner;
+
+public class FunWithStringsIntro {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        //ask user for name
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        //greets user input's name 
+        System.out.println("Hello " + name + "!");
+        //get length of user's name
+        int nameLength = name.length();
+        //presents user's input name and how many letters it consists
+        System.out.println("Your name is " + nameLength + " letters long.");
+        //indicates user's first letter
+        char firstLetter = name.charAt(0);
+        System.out.println("Your name starts with a " + firstLetter + ".");
+        //indicates user's last letter
+        char lastLetter = name.charAt(nameLength -1); 
+        System.out.println("Your name ends with a " + lastLetter + ".");
+        //ends with a goodbye message
+        System.out.println("Goodbye!");
+
+        input.close();
+    }
+}
